@@ -1,0 +1,21 @@
+### Generate Image with Text and Logo Overlay
+POST https://your-railway-app-name.up.railway.app/generate-image
+Content-Type: application/json
+
+{
+  "baseImagePublicId": "thwjphbfdgmmbbj0amcw",
+  "headlineText": "Hello Trusted Customer",
+  "overlayImagePublicId": "meat_discount_tag_xnuaw5",
+  "overlayWidth": 300,
+  "overlayOpacity": 90
+}
+
+### Local test
+POST http://localhost:5523/generate-image
+Content-Type: application/json
+
+{
+  "baseImagePublicId": "thwjphbfdgmmbbj0amcw",
+  "headlineText": "Local Test",
+  "overlayImagePublicId": "meat_discount_tag_xnuaw5"
+}
